@@ -1,0 +1,747 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<!--  link rel="shortcut icon" type="image/x-icon" href="https://production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" />
+  <link rel="mask-icon" type="" href="https://production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" /-->
+<meta name="robots" content="noindex">
+<link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+<title>NetSciQCom 2022 - Network Science for Quantum Communication Networks</title>
+<link
+	href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
+	rel="stylesheet">
+
+
+<link rel='stylesheet prefetch'
+	href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+
+<style>
+body {
+	background-color: #CCC;
+	font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	background-color: white;
+}
+
+h3 {
+	margin-top: 0%;
+}
+
+#title {
+	background-size: cover;
+	padding: 2% 0%;
+	margin-top: 1%;
+	margin-bottom: 3%;
+}
+
+#title img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+#title p {
+	font-weight: 500;
+}
+
+#sidebar.affix-top {
+	position: static;
+	margin-top: 0px;
+	width: 180px;
+}
+
+#sidebar.affix {
+	position: fixed;
+	top: 45px;
+	width: 180px;
+}
+
+#sideNav ul {
+	padding: 0px;
+}
+
+#sideNav li {
+	list-style-type: none;
+	background-color: #ddd;
+	font-weight: 500;
+	border-left: solid;
+	border-width: 4px;
+	padding: 2% 0% 2% 5%;
+	margin-bottom: 3%;
+}
+
+#sideNav li:hover {
+	background-color: #FF7D00;
+	border-color: #F30000;
+}
+
+#sideNav a {
+	color: black;
+}
+
+#sideNav a:hover {
+	color: white;
+	text-decoration: none !important;
+}
+
+#usefulLinks ul {
+	padding: 0px;
+}
+
+#usefulLinks li {
+	list-style-type: none;
+	background-color: #ddd;
+	font-weight: 500;
+	padding: 2% 3% 2% 3%;
+	margin-bottom: 3%;
+	color: black;
+}
+
+#footer {
+	background-color: #CCC;
+	font-weight: 500;
+	padding: 2% 3% 2% 3%;
+	margin-top: 3%;
+	border-top: thick;
+	border-top-color: black;
+	color: black;
+	text-align: center;
+}
+
+#usefulLinks li:hover {
+	background-color: #FF7D00;
+	border-color: #F30000;
+	color: white;
+	text-decoration: none !important;
+}
+
+#usefulLinks a:hover {
+	color: white;
+	text-decoration: none !important;
+}
+
+#mainContent p {
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+@media ( min-width : 800px) {
+	.container {
+		width: 800px;
+	}
+}
+
+ol {
+	margin-bottom: 5% !important;
+}
+
+.schedule_table {
+	width: 100%;
+	border: solid black 1px;
+}
+
+.time {
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-align: center;
+	font-weight: bolder;
+	border: solid #979a9a 1px;
+}
+
+.event {
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+	border: solid #979a9a 1px;
+}
+
+.session {
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-align: center;
+	border: solid #979a9a 1px;
+}
+
+.presenter {
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+	border: solid #979a9a 1px;
+}
+</style>
+</head>
+
+<body translate="no">
+
+	<div class='container'>
+
+		<div id='title' class='text-center'>
+			<h1>
+				<img src='images/ieee-infocom.png' /> NetSciQCom 2022
+			</h1>
+			<p>
+				The First International Workshop on Network Science for Quantum Communication Networks <br /> Virtual Conference
+			</p>
+			<img src='images/QuantumCommunication2A.jpg' />
+		</div>
+
+		<div class='row'>
+			<div class='col-xs-3'>
+				<div id="sidebar">
+					<h4>INFOCOM NetSciQCom 2022</h4>
+					<ul class="nav nav-stacked" id='sideNav'>
+						<a href='#scope'><li>SCOPE</li></a>
+						<a href='#callForPapers'><li>CALL FOR PAPERS</li></a>
+						<a href='#importantDates'><li>IMPORTANT DATES</li></a>
+						<a href='#submissionDetails'><li>SUBMISSION DETAILS</li></a>
+						<!--a href='#keynoteSpeaker'><li>KEYNOTE SPEAKER</li></a>
+						<a href='#invitedTalks'><li>INVITED TALKS</li></a-->
+						<!--a href='#workshopSchedule'><li>WORKSHOP SCHEDULE</li></a-->
+						<a href='#committee'><li>COMMITTEE</li></a>
+						<!--a href='#pastWorkshops'><li>PAST WORKSHOPS</li></a-->
+					</ul>
+
+					<h4>Quick Information</h4>
+					<ul style="padding-left: 10px; padding-top: 0px;">
+						<li><p class="text-muted" style="font-size: small;">
+								The NetSciQCom workshop is part of <a
+									href='https://infocom2022.ieee-infocom.org/'
+									target="_blank">INFOCOM 2022</a>
+							</p></li>
+						<li><p class="text-muted" style="font-size: small;">
+								Submission limit: <b>6 pages</b>
+							</p></li>
+						<li><p class="text-muted" style="font-size: small;">
+								Submit deadline: <b>11-January-2022</b>
+							</p></li>
+						<li><p class="text-muted" style="font-size: small;">
+								Submit your paper: <a
+									href="https://infocom2022.ieee-infocom.org/"><b>TBD</b></a>
+							</p> </li-->
+					</ul>
+
+
+
+				</div>
+			</div>
+			<div class='col-xs-9' id='mainContent'>
+				<h3>Welcome!</h3>
+				<p>
+					The First <b>IEEE International Workshop on Network Science for Quantum Communication Networks</b> (CINS) will be held virtually in conjunction with <b><a
+						href="https://infocom2022.ieee-infocom.org/" target="_blank">INFOCOM 2022</a></b>.
+				</p>
+
+				<hr id='scope' />
+				<h3>Scope</h3>
+				<p>
+					Along with advances in the Quantum Computing domain, Quantum Communication has also made significant strides in the last twenty years, starting with DARPA Quantum Network effort in the first decade of the twenty-first century. The pace of advances in Quantum Communication/Networking has accelerated significantly in the second decade with efforts all across the world on advancing this important technology. Major efforts are currently underway, not only in the United States, but also in countries such as China, India, U.K., The Netherlands and Singapore. 
+					<br> <br>
+					Network Science has been used to model the structure and dynamics of a wide variety of large-scale complex networks, including Internet connectivity, the WWW, peer-to-peer networks, and online social networks. The concepts from Network Science can play an equally important role in Quantum Communication as it has played in the classical communication. The topic of this workshop will be of particular relevance to the INFOCOM community, as Quantum Communication technology is going to play a major role in the computer communication in the future. Consequently, it’s extremely important to understand the physics of quantum communication, the higher layer protocols of classical communication as well as tools and techniques from Network Science to derive comprehensive benefit from the Quantum Communication technology. 
+					<br> <br>
+					A deeper understanding of the interplay between multiple disciplines can only be achieved through closer interaction between physicists, mathematicians, network scientists and communication network designers. The goal of this workshop is to provide a forum for this diverse group of researchers to come together and exchange ideas leading to insights into the design of robust and complex quantum communication networks of the future.
+				</p>
+
+
+				<hr id='callForPapers' />
+				<h3>Call for Papers</h3>
+				<p>We solicit papers addressing the fundamental concepts and applications of network science, particularly as it intersects with the design of Quantum Communication Networks. We welcome theoretical approaches and data-driven approaches, as well as position papers.  Topics of interest include, but are not limited to:</p>
+				<ul>
+					<li>Modelling, design and analysis of complex and interdependent (classical and quantum) communication networks</li>
+					<li>Information diffusion and knowledge transfer in networks, propagation studies, routing, traffic modelling</li>
+					<li>Algorithms for static, time-varying, and dynamic communication networks</li>
+					<li>Network robustness, phase transitions, security, privacy, trust in quantum communication networks</li>
+					<li>Economic aspects of Quantum Communication Networks, incentives, marketing </li>
+					<li>Quantum information theory - Entanglement-assisted multi-user quantum channels, Quantum error correction</li>
+					<li>Quantum repeaters, multipath and multiflow routing of entanglement, manipulating graph states, quantum network coding</li>
+				</ul>
+
+
+				<hr id='importantDates' />
+				<h3>Important Dates</h3>
+				<ul>
+					<li><b>Submission Deadline: January 11, 2022</b></li>
+					<li>Acceptance Notification: February 18, 2022</li>
+					<li>Camera Ready: February 28, 2022</li>
+					<li>Workshop Date: TBD</li>
+				</ul>
+
+				<hr id='submissionDetails' />
+				<h3>Submission Details</h3>
+				<p>
+					Papers should contain original material, i.e., that has not been previously published or currently submitted elsewhere. Manuscripts must be limited to <b>6 pages</b> in IEEE 8.5x11 conference format, and formatted in strict accordance with the IEEE Communications Society author guidelines. All submissions will be handled electronically. The accepted and presented papers will be published in the IEEE INFOCOM 2022 workshop proceedings and appear in IEEE Xplore. Submissions must be submitted electronically in printable PDF form, via the submission site at: <b><a
+						href="https://infocom2022.ieee-infocom.org/">TBD</a></b>
+
+				 <!--Submissions will be reviewed by the program committee for presentation at the workshop. Revised versions of these submissions will be published in a special issue of <a
+						href="https://infocom2022.ieee-infocom.org/" target="_blank">Performance
+						Evaluation Review</a> (PER), with a due date after the workshop making
+					it possible for authors to incorporate the results of, or simply
+					mention, any relevant discussions at the workshop. -->
+				</p>
+
+				
+				<!--hr id='keynoteSpeaker' /-->
+				<!--<h3>Keynote Speaker</h3>-->
+				<!-- p style="text-align: center;"><i>To be announced</i></p-->
+				<!--p style="padding-left: 1.8em;">
+					<a href='http://faculty.engineering.asu.edu/vvittal/'
+						target="_blank">Prof. Vijay Vittal</a>, Arizona State University,
+					USA
+				</p-->
+
+				
+				<!--hr id='invitedTalks' /hr-->
+				<!--h3>Invited Talks</h3-->
+				<!-- p style="text-align: center;"><i>To be announced</i></p-->
+				<!--ul>
+					<li>
+						<p>
+							<b>Invited Talk 1</b>
+						</p>
+						<p style="padding-left: 1.8em;">
+							<a
+								href='https://www.pnnl.gov/science/staff/staff_info.asp?staff_num=8787'
+								target="_blank">Dr. Samrat Chatterjee</a>, Pacific Northwest
+							National Laboratories, USA
+						</p>
+					</li>
+					<li>
+						<p>
+							<b>Invited Talk 2</b>
+						</p>
+						<p style="padding-left: 1.8em;">
+							<a href='https://isearch.asu.edu/profile/1981721' target="_blank">Prof.
+								Oliver Kosut</a>, Arizona State University, USA
+						</p>
+					</li>
+					<li>
+						<p>
+							<b>Invited Talk 3</b>
+						</p>
+						<p style="padding-left: 1.8em;">
+							<a href='http://tonghanghang.org/' target="_blank">Prof.
+								Hanghang Tong</a>, University of Illinois at Urbana-Champaign, USA
+						</p>
+					</li>
+					<li>
+						<p>
+							<b>Invited Talk 4</b>
+						</p>
+						<p style="padding-left: 1.8em;">
+							<a href='http://www.kkant.net/' target="_blank">Prof.
+								Krishna Kant</a>, Temple University, USA
+						</p>
+					</li>
+					<li>
+						<p>
+							<b>Invited Talk 5</b>
+						</p>
+						<p style="padding-left: 1.8em;">
+							<a href='https://fernandokuipers.nl/' target="_blank">Prof.
+								Fernando Kuipers</a>, Delft University of Technology, The
+							Netherlands
+						</p>
+					</li>
+					<li>
+						<p>
+							<b>Invited Talk 6</b>
+						</p>
+						<p style="padding-left: 1.8em;">
+							<a href='https://ecee.engineering.asu.edu/project/anamitra-pal/'
+								target="_blank">Prof. Anamitra Pal</a>, Arizona State
+							University, USA
+						</p>
+					</li>
+					<li>
+						<p>
+							<b>Invited Talk 7</b>
+						</p>
+						<p style="padding-left: 1.8em;">
+							<a href='http://www.arundas.net/' target="_blank">Dr. Arun
+								Das</a>, Visa Inc., USA
+						</p>
+					</li>
+				</ul-->
+
+				<!--hr id='workshopSchedule' /hr-->
+				<!--h3>Workshop Schedule</h3-->
+				<!--table>
+					<tr>
+						<td nowrap style="padding: 4px"><b>Date:</b></td>
+						<td style="padding: 4px;">June 28, 2019</td>
+					</tr>
+					<tr>
+						<td nowrap valign="top" style="padding: 4px"><b>Location:</b></td>
+						<td style="padding: 4px">Room 227C, <a
+							href="https://www.phoenixconventioncenter.com/">Phoenix
+								Convention Center</a> (<a
+							href="https://goo.gl/maps/yPxfDRofcP8eUc8m7">Google Maps</a>), <br />Phoenix,
+							Arizona, USA
+						</td>
+					</tr>
+				</table-->
+				<!--br /-->
+				<!-- p style="text-align: center;">
+					<i>To be announced</i>
+				</p -->
+				<!--table class="schedule_table">
+					<tr>
+						<td class="event" colspan="3"
+							style="background: #a9cce3; color: black"><b>June 28<sup>th</sup>,
+								2019<br />Room 227C, <a
+								href="https://www.phoenixconventioncenter.com" target="_blank">Phoenix
+									Convention Center</a>, Phoenix, Arizona, USA
+						</b></td>
+					</tr>
+					<tr>
+						<td nowrap class="time" style="background: #ddd;">08:00 -
+							09:00</td>
+						<td class="event" colspan="2" style="background: #ddd;"><b>Breakfast
+								&amp; Registration</b></td>
+					</tr>
+					<tr>
+						<td nowrap class="session" colspan="3"
+							style="background: #FDFDF0;"><b>Session 1</b></td>
+					</tr>
+					<tr>
+						<td class="time">09:00 - 09:05</td>
+						<td class="event">Welcome</td>
+						<td class="presenter">
+							<table style="width: 100%">
+								<tr>
+									<td style="width: 50%"><b>My T. Thai</b><br />University
+										of Florida, USA</td>
+									<td style="width: 50%"><b>Arun Sen</b><br />Arizona State
+										University, USA</td>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="time">09:05 - 10:00</td>
+						<td class="event">Keynote Talk</td>
+						<td class="presenter"><i>Electricity and Water do Mix:
+								Interdependent Electric and Water Infrastructure Modeling,
+								Optimization and Control</i> <br /> <b>Vijay Vittal</b><br />Arizona
+							State University, USA</td>
+					</tr>
+					<tr>
+						<td nowrap class="time" style="background: #ddd;">10:00 -
+							10:30</td>
+						<td class="event" colspan="2" style="background: #ddd;"><b>Coffee
+								Break</b></td>
+					</tr>
+					<tr>
+						<td nowrap class="session" colspan="3"
+							style="background: #FDFDF0;"><b>Session 2</b><br /> <span
+							style="font-size: small;">Session Chair: <b>Arun Das</b>,
+								Visa Inc., USA
+						</span></td>
+					</tr>
+					<tr>
+						<td class="time">10:30 - 11:00</td>
+						<td class="event">Invited Talk #1</td>
+						<td class="presenter"><i>Cyber-Based Contingency Analysis
+								of Interdependent Infrastructure Networks under Uncertainty</i><br />
+							<b>Samrat Chatterjee</b><br />Pacific Northwest National
+							Laboratories, USA</td>
+					</tr>
+					<tr>
+						<td class="time">11:00 - 11:30</td>
+						<td class="event">Invited Talk #2</td>
+						<td class="presenter"><i>Evaluating the Vulnerability of
+								Energy Management Systems to False Data Injection Attacks</i><br />
+							<b>Oliver Kosut</b><br />Arizona State University, USA</td>
+					</tr>
+					<tr>
+						<td class="time">11:30 - 12:00</td>
+						<td class="event">Invited Talk #3</td>
+						<td class="presenter"><i>Deep Network Mining: Exploring
+								the Power and Beauty of Network of Networks</i><br /> <b>Hanghang
+								Tong</b><br />University of Illinois at Urbana-Champaign, USA</td>
+					</tr>
+					<tr>
+						<td class="time">12:00 - 12:30</td>
+						<td class="event">Invited Talk #4</td>
+						<td class="presenter"><i>Advanced Persistent Threats in
+								Autonomous Driving</i><br /> <b>Krishna Kant</b><br />Temple
+							University, USA</td>
+					</tr>
+
+					<tr>
+						<td nowrap class="time" style="background: #ddd;">12:30 -
+							13:30</td>
+						<td class="event" colspan="2" style="background: #ddd;"><b>Lunch
+								Break</b></td>
+					</tr>
+					<tr>
+						<td nowrap class="session" colspan="3"
+							style="background: #FDFDF0;"><b>Session 3</b><br /> <span
+							style="font-size: small;">Session Chair: <b>Samrat
+									Chatterjee</b>, Pacific Northwest National Laboratories, USA
+						</span></td>
+					</tr>
+					<tr>
+						<td class="time">13:30 - 14:00</td>
+						<td class="event">Invited Talk #5</td>
+						<td class="presenter"><i>Network Vulnerability after a
+								Natural Disaster</i><br /> <b>Fernando Kuipers</b><br />Delft
+							University of Technology, The Netherlands</td>
+					</tr>
+					<tr>
+						<td class="time">14:00 - 14:30</td>
+						<td class="event">Invited Talk #6</td>
+						<td class="presenter"><i>Identifying Unique Power System
+								Signatures for Determining Vulnerability of Critical Power
+								System Assets</i><br /> <b>Anamitra Pal</b><br />Arizona State
+							University, USA</td>
+					</tr>
+					<tr>
+						<td class="time">14:30 - 15:00</td>
+						<td class="event">Invited Talk #7</td>
+						<td class="presenter"><i>Smallest Pseudo Target Set
+								Identification and Related Problems Using the Implicative
+								Interdependency Model</i><br /> <b>Arun Das</b><br />Visa Inc.,
+							USA</td>
+					</tr>
+					<tr>
+						<td nowrap class="time" style="background: #ddd;">15:00 -
+							15:30</td>
+						<td class="event" colspan="2" style="background: #ddd;"><b>Coffee
+								Break</b></td>
+					</tr>
+					<tr>
+						<td nowrap class="session" colspan="3"
+							style="background: #FDFDF0;"><b>Session 4</b><br /> <span
+							style="font-size: small;">Session Chair: <b>Fernando
+									Kuipers</b>, Delft University of Technology, The Netherlands
+						</span></td>
+					</tr>
+					<tr>
+						<td class="time">15:30 - 15:50</td>
+						<td class="event">Contributed Talk #1</td>
+						<td class="presenter"><i>Less is More: Real-time Failure
+								Localization in Power Systems</i><br /> <b>Chen Liang</b><br />California
+							Institute of Technology, USA</td>
+					</tr>
+					<tr>
+						<td class="time">15:50 - 16:10</td>
+						<td class="event">Contributed Talk #2</td>
+						<td class="presenter"><i>Scheduling Post-disaster Repairs
+								in Electricity Distribution Networks with Uncertain Repair Times</i>
+							<br /> <b>Y. Tan</b><sup>1</sup>, <b>A. K. Das</b><sup>2</sup>,
+							<b>M. Ahumada-Paras</b><sup>1</sup>, <b>P. Arabshahi</b><sup>1</sup>
+							and <b>D. S. Kirschen</b><sup>1</sup><br /> University of
+							Washington<sup>1</sup>, USA<br /> Eastern Washington University<sup>2</sup>,
+							USA</td>
+					</tr>
+					<tr>
+						<td class="time">16:10 - 16:30</td>
+						<td class="event">Contributed Talk #3</td>
+						<td class="presenter"><i>Cascading Failures in
+								Interconnected Power-to-Water Networks</i> <br /> <b>E.
+								Pournaras</b><sup>1</sup>, <b>R. Taormina</b><sup>2</sup>, <b>M.
+								Thapa</b><sup>1</sup>, <b>S. Galelli</b><sup>2</sup>, <b>V. R.
+								Palleti</b><sup>2</sup>, and <b>R. Kooij</b><sup>2, 3</sup> <br />ETH
+							Zurich<sup>1</sup>, Zurich, Switzerland <br />Singapore
+							University of Technology and Design<sup>2</sup>, Singapore <br />Delft
+							University of Technology<sup>3</sup>, The Netherlands</td>
+					</tr>
+					<tr>
+						<td class="time">16:30 - 16:50</td>
+						<td class="event">Contributed Talk #4</td>
+						<td class="presenter"><i>Optimal Monitoring Strategies
+								for Critical Infrastructure Networks</i> <br /> <b>K. Palani</b>,
+							and <b> D. M. Nicol</b><br />University of Illinois at
+							Urbana-Champaign, USA</td>
+					</tr>
+					<tr>
+						<td class="time">17:00 - 17:20</td>
+						<td class="event">Contributed Talk #4</td>
+						<td class="presenter"><i>Vulnerability of Interdependent
+								Infrastructures Under Random Attacks</i> <br /> <b>H.
+								Khamfroush</b><sup>1</sup>, <b>S. L. Iloo</b><sup>1</sup>, and <b>M.
+								Rahnamay-Naeini</b><sup>2</sup><br />University of Kentucky<sup>1</sup>,
+							USA<br />University of South Florida<sup>2</sup>, USA</td>
+					</tr>
+					<tr>
+						<td class="time">17:20 - 18:20</td>
+						<td class="event">Panel Discussion</td>
+						<td class="presenter">
+							<table style="width: 100%">
+								<tr>
+									<td style="width: 33%" valign="top"><b>David <br />
+											Nicol
+									</b><br />University of Illinois at Urbana-Champaign</td>
+									<td style="width: 33%" valign="top"><b>Andjelka <br />
+											Kelic
+									</b><br />Sandia National Laboratories</td>
+									<td style="width: 33%" valign="top"><b>Auroop<br />
+											Ganguly
+									</b>Northeastern<br />University</td>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="time">16:50 - 17:00</td>
+						<td class="event">Concluding Remarks</td>
+						<td class="presenter">
+							<table style="width: 100%">
+								<tr>
+									<td style="width: 50%"><b>My T. Thai</b><br />University
+										of Florida, USA</td>
+									<td style="width: 50%"><b>Arun Sen</b><br /> Arizona
+										State University, USA</td>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</tr-->
+				<hr id='committee' />
+				<h3>Committee</h3>
+				<ul>
+					<li>
+						<p>
+							<b>Steering Committee </b>
+						</p>
+						<p style="padding-left: 1.8em;">
+							Dr. Nageswara Rao, Oak Ridge National Laboratory
+						</p>
+						<p style="padding-left: 1.8em;">
+							Dr. Saikat Guha, University of Arizona, USA
+						</p>
+						<p style="padding-left: 1.8em;">
+							Dr. Arun Sen, Arizona State University, USA
+						</p>
+						<p style="padding-left: 1.8em;">
+							Dr. Guoliang Xue, Arizona State University, USA
+						</p>
+					</li>
+
+
+					<li>
+						<p>
+							<b>Technical Program Committee Chairs</b>
+						</p>
+						<p style="padding-left: 1.8em;">
+							Dr. Nageswara Rao, Oak Ridge National Laboratory
+						</p>
+						<p style="padding-left: 1.8em;">
+							Dr. Arun Sen, Arizona State University, USA
+						</p>
+					</li>
+					<li>
+						<p>
+							<b>Program Committee Members</b>
+						</p>
+						<p style="padding-left: 1.8em;">
+							Dr. Biplab Sikdar, National University of Singapore, Singapore
+						</p>
+						<p style="padding-left: 1.8em;">
+							Dr. Kanu Sinha, Princeton University, USA
+						</p>
+						<p style="padding-left: 1.8em;">
+							Dr. Gil Zussman, Columbia University, USA
+						</p>
+						<p style="padding-left: 1.8em;">
+							Dr. Stefan Schmidt, Technical University of Berlin, Germany
+						</p>
+						<p style="padding-left: 1.8em;">
+							Dr. Victoria Goliber, D-Wave Systems, USA
+						</p>
+						<p style="padding-left: 1.8em;">
+							Dr. Urbasi Sinha, Raman Research Institute, India
+						</p>
+						<p style="padding-left: 1.8em;">
+							Dr. Joe Lukens, Oak Ridge National Laboratory, USA
+						</p>
+						<p style="padding-left: 1.8em;">
+							Dr. Raj Kettimuthu, Argonne National Laboratory, USA
+						</p>
+						<p style="padding-left: 1.8em;">
+							Dr. Prithwish Basu, Raytheon BBN Technologies, USA
+						</p>
+						</p>
+					</li>
+					<li>
+						<p>
+							<b>Web Chairs</b>
+						</p>
+						<p style="padding-left: 1.8em;">
+							Kaustav Basu, Arizona State University, USA
+						</p>
+						<p style="padding-left: 1.8em;">
+							Sandipan Choudhuri, Arizona State University, USA
+							</p>
+					</li>
+
+					<li>
+						<p>
+							<b>Publicity Chair</b>
+						</p>
+						<p style="padding-left: 1.8em;">
+							Dr. Arun Das,	Google, USA
+						</p>
+					</li>
+
+				</ul>
+				<!--tr>
+				<hr id='pastWorkshops' />
+				<h3>Past CINS Workshops</h3>
+				<ul>
+					<li>
+						<p>
+							<b><a href="archives/cins2017/">CINS 2017</a></b>
+						</p>
+					</li>
+					<li>
+						<p>
+							<b><a href="archives/cins2018/">CINS 2018</a></b>
+						</p>
+					</li>
+				</ul>
+			</tr-->
+			</div>
+			<!-- <div class='col-xs-3' id='usefulLinks'>
+				<h4>Useful Links</h4>
+				<ul>
+					<a href='https://www.sigmetrics.org/sigmetrics2017/workshops.html'><li>ACM
+							SIGMETRICS 2017</li></a>
+				</ul>
+			</div> -->
+		</div>
+		<div class="row">
+			<div class='col-xs-12' id="footer">
+				<a href="http://netsci.asu.edu/cins/">CINS</a> is sponsored by <a
+					href="http://www.sigmetrics.org/" target="_blank">ACM</a>
+				<!-- <div class="panel panel-primary">
+  					<div class="panel-heading">Panel Heading</div>
+  				</div> -->
+			<!--/div-->
+		</div>
+	</div>
+
+
+
+	<script
+		src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+	<script
+		src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+	<script type="text/javascript">
+		/* activate sidebar */
+		$('#sidebar').affix({
+			offset : {
+				top : 290
+			}
+		});
+	</script>
+</body>
+</html>
